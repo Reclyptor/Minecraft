@@ -1,0 +1,32 @@
+# Quick start. Copy, set the passwords, `docker compose up -d`.
+# Full configuration: README.md
+services:
+  minecraft:
+    image: ghcr.io/reclyptor/minecraft:latest
+    container_name: minecraft
+    restart: unless-stopped
+    ports:
+      - "25565:25565/tcp"
+    environment:
+      TZ: America/Chicago
+      SERVER_NAME: "Minecraft"        # the name notifications use
+      EULA: "TRUE"                 # you accept https://www.minecraft.net/eula
+      SERVER_TYPE: vanilla             # vanilla | paper | fabric
+      VERSION: latest           # latest | a version id such as 26.2
+      MEMORY: 4G
+      MOTD: "A Minecraft Server"
+      MAX_PLAYERS: "20"
+      DIFFICULTY: normal
+      ADMINS: "your-name"
+      WHITELIST: "your-name,a-friend"
+      RCON_PASSWORD: "change-me"
+      DISCORD_WEBHOOK_URL: ""
+      BACKUP_CRON: "0 4 * * *"
+      BACKUP_RETAIN_DAYS: "14"
+      UPDATE_CRON: "0 * * * *"
+      UPDATE_WARN_MINUTES: "15"
+    volumes:
+      - ./data:/data
+      - ./backups:/backups
+    # The image runs as uid/gid 1000. Create the directories with that owner:
+    #   mkdir -p data backups && sudo chown -R 1000:1000 data backups

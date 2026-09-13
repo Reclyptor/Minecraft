@@ -1,0 +1,8 @@
+external-sources=true
+source-path=SCRIPTDIR
+source-path=adapter
+source-path=adapter/lib
+
+# Adapter contract functions have fixed arity (GameOps docs/CONTRACT.md); the
+# toolkit's defaults forward "$@", which shellcheck reads as callers forgetting it.
+disable=SC2119

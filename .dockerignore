@@ -1,0 +1,11 @@
+.git
+.github
+.build
+tests
+*.md
+.env
+.env.*
+.gitignore
+.dockerignore
+.shellcheckrc
+compose.yaml

@@ -1,0 +1,14 @@
+[11:13:58] [ServerMain/INFO]: Loading server
+[11:14:03] [Server thread/INFO]: Starting minecraft server version 26.2
+[11:14:03] [Server thread/INFO]: Loading properties
+[11:14:10] [Server thread/INFO]: Done (6.372s)! For help, type "help"
+[11:14:10] [Server thread/INFO]: Starting remote control listener
+[11:14:10] [Server thread/INFO]: Thread RCON Listener started
+[11:20:01] [Server thread/INFO]: Alice joined the game
+[11:20:05] [Server thread/INFO]: <Alice> Bob joined the game
+[11:21:00] [Server thread/INFO]: Bob_Builder joined the game
+[11:21:30] [Server thread/INFO]: <Bob_Builder> hi
+[11:25:00] [Server thread/INFO]: Alice lost connection: Disconnected
+[11:25:00] [Server thread/INFO]: Alice left the game
+[11:26:00] [Server thread/INFO]: Bob_Builder left the game
+[11:27:00] [Server thread/INFO]: There are 0 of a max of 20 players online:
